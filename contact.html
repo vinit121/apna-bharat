@@ -5,21 +5,16 @@
            
         <style> 
                body{
-                     background-color:#00ccff;} 
+                     background-color:#00ccff;
+                        position:relative;} 
                
-                h1{
+                #text{
                    color:white;
                    position:fixed;
                    left:40px;
                    top:180px;
                    }
                
-               h3{
-                  color:white;
-                   position:fixed;
-                   left:30px;
-                   top:220px;
-                 }
                
              .button{background-color:white;
                      position:fixed;
@@ -31,8 +26,9 @@
                    padding:8px 28px;
                    }
 
-             form{ background-color:white;
-                   position:fixed;
+             #form{ background-color:white;
+                    display:block;
+                   position:absolute;
                    left:400px;
                    top:180px;
                    font-size:23px;
@@ -56,11 +52,12 @@
         </style>
 </head>
 <body>
- 
+ <div id="text">
 <h1> Join us </h1>
 <h3>join us to explore india<br>best way to know beauty of india </h3>
   <a href="about.html"> <button class="button"> About us </button> </a>
-
+</div>
+<div id="form">
 <form>
       Register Here<br><br>
          <input type="text" placeholder="Name" size="50">
@@ -69,7 +66,6 @@
      <br><br><input type="password" placeholder="Password" size="50">
      <br><br><button class="form"> submit</button>
 </form>
-
-
+</div>
 </body>
 </html
